@@ -12,4 +12,28 @@
         就分别在两个路径中执行 go work use ../ ，到这里工作区就初始化完毕了，
         然后就可以在(go-study/server)和(go-study/client)中执行 go run main.go 了
 
+## 2、检查go代码中内存占用
+    https://studygolang.com/articles/29812?fr=sidebar
+
+    pprof是Golang提供的一个性能分析工具，它可以对程序的CPU占用和内存占用进行分析
+    首先，在代码中导入pprof包 import _ "net/http/pprof"
+    然后在程序的main函数中，添加以下代码
+    go func() {
+        http.ListenAndServe("localhost:8080", nil)
+    }()
+    在程序启动后，我们就可以通过访问"http://localhost:8080/debug/pprof/"来使用pprof工具
+    可以在浏览器中输入"http://localhost:8080/debug/pprof/heap"来查看程序的堆内存占用情况
+    可以使用go tool pprof的命令行工具来分析记录的数据。比如，我们可以使用以下命令来查看程序中使用最多内存的函数
+    go tool pprof http://localhost:8080/debug/pprof/heap
+
+
+
+
+
+
+
+
+
+
+
 

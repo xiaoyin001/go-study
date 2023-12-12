@@ -14,6 +14,7 @@
 
 ## 2、检查go代码中内存占用
     https://studygolang.com/articles/29812?fr=sidebar
+    https://studygolang.com/topics/17018#reply0
 
     pprof是Golang提供的一个性能分析工具，它可以对程序的CPU占用和内存占用进行分析
     首先，在代码中导入pprof包 import _ "net/http/pprof"

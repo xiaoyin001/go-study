@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-func TestDemo(t *testing.T) {
+func TestNeiCun(t *testing.T) {
 	Consume()
 }
 

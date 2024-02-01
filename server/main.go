@@ -1,10 +1,9 @@
 package main
 
 import (
-	"fmt"
+	"go-study/server/cmd"
 )
 
 func main() {
-	fmt.Println("Star Server main()")
-
+	cmd.AppExecute()
 }

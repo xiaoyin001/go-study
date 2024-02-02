@@ -2,7 +2,9 @@ package server
 
 import (
 	"fmt"
+	"go-study/server/route"
 
+	"github.com/gin-gonic/gin"
 	"github.com/spf13/cobra"
 )
 
@@ -21,5 +23,9 @@ func init() {
 }
 
 func severCmdRun(cmd *cobra.Command, args []string) {
-	fmt.Println("这里就是服务的入口，假装起了一个服务")
+	mGin := gin.Default()
+
+	route.InitRoute(mGin)
+
+	mGin.Run(":8080")
 }

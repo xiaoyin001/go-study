@@ -7,7 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// 初始化路由
+// InitRoute 初始化路由
 func InitRoute(aEngine *gin.Engine) {
 	aEngine.GET("/", api.ShowHome)
 

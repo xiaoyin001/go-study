@@ -2,8 +2,8 @@ package cmd
 
 import (
 	"fmt"
-	"go-study/server/cmd/config"
-	"go-study/server/cmd/server"
+	"xyserver/cmd/config"
+	"xyserver/cmd/server"
 
 	"github.com/spf13/cobra"
 )

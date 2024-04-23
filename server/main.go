@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-study/server/cmd"
+	"xyserver/cmd"
 )
 
 func main() {

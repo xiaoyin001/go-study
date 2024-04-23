@@ -1,8 +1,8 @@
 package route
 
 import (
-	"go-study/server/api"
-	"go-study/server/api/demo"
+	"xyserver/api"
+	"xyserver/api/demo"
 
 	"github.com/gin-gonic/gin"
 )

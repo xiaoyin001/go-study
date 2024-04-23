@@ -2,7 +2,7 @@ package server
 
 import (
 	"fmt"
-	"go-study/server/route"
+	"xyserver/route"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/cobra"
